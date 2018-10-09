@@ -1,0 +1,72 @@
+public class Player{
+//Images
+boolean upKey = false;
+boolean downKey = false;
+boolean rightKey = false;
+boolean leftKey = false;
+
+  player(){
+    display();
+    move();
+    accessBag();
+
+  }
+
+  display(){
+    if(upKey == true){
+    //img(...);
+    }
+
+    else if(downKey == true){
+    //img(...);
+    }
+
+    else if(rightKey == true){
+    //img(...);
+    }
+
+    else{
+    //img(...);
+    }
+
+  }
+
+  move(){
+
+  
+  }
+
+  keyPressed(){
+    if(keyPressed == UP_ARROW){
+      upKey == true;
+      downKey == false;
+      rightKey == false;
+      leftKey == false;
+    }
+
+    else if(keyPressed == DOWN_ARROW){
+      upKey == false;
+      downKey == true;
+      rightKey == false;
+      leftKey == false;
+    }
+
+    else if(keyPressed == RIGHT_ARROW){
+      upKey == false;
+      downKey == false;
+      rightKey == true;
+      leftKey == false;
+    }
+
+    else if(keyPressed == LEFT_ARROW){
+      upKey == true;
+      downKey == false;
+      rightKey == false;
+      leftKey == true;
+    }
+
+  }
+
+
+
+}
