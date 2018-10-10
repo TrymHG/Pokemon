@@ -4,39 +4,59 @@ boolean upKey = false;
 boolean downKey = false;
 boolean rightKey = false;
 boolean leftKey = false;
+int xCord = 0;
+int yCord = 0;
 
   player(){
     display();
-    move();
-    accessBag();
 
   }
 
-  display(){
+  public void display(){
     if(upKey == true){
-    //img(...);
+      yCord-=2;
+      if(yCord % 2 == 0){
+        //img(...);
+      }
+      else{
+        //img(...);
+      }
+
     }
 
     else if(downKey == true){
-    //img(...);
+      yCord+=2;
+      if(yCord % 2 == 0){
+        //img(...);
+        }
+      else{
+        //img(...);
+        }
     }
 
     else if(rightKey == true){
-    //img(...);
+      xCord-=2;
+      if(xCord % 2 == 0){
+        //img(...);
+        }
+      else{
+        //img(...);
+      }
     }
 
     else{
-    //img(...);
+    xCord+=2;
+    if(xCord % 2 == 0){
+      //img(...);
+      }
+    else{
+      //img(...);
     }
 
   }
 
-  move(){
 
-  
-  }
-
-  keyPressed(){
+  public void keyPressed(){
     if(keyPressed == UP_ARROW){
       upKey == true;
       downKey == false;
